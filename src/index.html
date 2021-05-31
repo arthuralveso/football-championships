@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Campeonatos</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #2db444"
+    >
+      <div class="container-fluid d-flex justify-content-center">
+        <span class="navbar-brand">Campeonatos</span>
+      </div>
+    </nav>
+    <div class="container d-flex flex-row justify-content-around">
+      <div class="border rounded container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">País</th>
+              <th scope="col">Nome do campeonato</th>
+              <th scope="col">Data de inicio</th>
+            </tr>
+          </thead>
+          <tbody id="competition-brazil"></tbody>
+        </table>
+      </div>
+
+      <div class="border rounded container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">País</th>
+              <th scope="col">Nome do campeonato</th>
+              <th scope="col">Data de inicio</th>
+            </tr>
+          </thead>
+          <tbody id="competition-data"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/service.js"></script>
+  </body>
+</html>
